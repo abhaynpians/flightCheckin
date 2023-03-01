@@ -1,14 +1,11 @@
 package com.id.flightcheckin.integration.dto;
 
 public class ReservationUpdateRequest {
-	
 
 	private long id;
-	
-	
+
 	private int NumberOfBags;
 	boolean checkedIn;
-	
 
 	public long getId() {
 		return id;
@@ -23,14 +20,21 @@ public class ReservationUpdateRequest {
 	}
 
 	public void setNumberOfBags(int numberOfBags) {
-		 this.NumberOfBags = numberOfBags;
+		this.NumberOfBags = numberOfBags;
 	}
 
 	public boolean getCheckedIn() {
 		return checkedIn;
 	}
+
 	public void setCheckIn(boolean checkedIn) {
-		this.checkedIn=checkedIn;
+		this.checkedIn = checkedIn;
+	}
+
+	@Override
+	public String toString() {
+		return "ReservationUpdateRequest [id=" + id + ", NumberOfBags=" + NumberOfBags + ", checkedIn=" + checkedIn
+				+ "]";
 	}
 
 }
